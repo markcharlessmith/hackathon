@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Robot Takeover",
+    "version": "1.0",
+    "description": "This extension will initiate a robot takeover",
+    "icons": { 
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png" 
+    },
+    "web_accessible_resources" : [
+        "images/*.jpg",
+        "images/*.png",
+        "robosound.wav"
+        ],
+    "content_scripts" : [
+        {
+        "matches" : [
+            "<all_urls>"
+            ],
+        "js" : ["main.js"]
+        }
+    ]
+  }
